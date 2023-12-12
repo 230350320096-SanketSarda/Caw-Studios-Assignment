@@ -1,0 +1,96 @@
+{
+  "id": "5cdbda19-3c0e-4835-9d2c-8cb51c6b62bc",
+  "version": "2.0",
+  "name": "CAW Studios Assignment",
+  "url": "https://testpages.herokuapp.com/styled/tag/dynamic-table.html",
+  "tests": [{
+    "id": "7675b457-1fcc-4005-857e-ff9ec9559ee4",
+    "name": "Insert Data in Table",
+    "commands": [{
+      "id": "c8236878-c25d-4ebd-94a1-e87216ef6f6c",
+      "comment": "",
+      "command": "open",
+      "target": "https://testpages.herokuapp.com/styled/tag/dynamic-table.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "147d2676-da79-4fba-b69b-1bffe285f56c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fcd789e-77a7-4a1f-8c03-9df9e2b863dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=summary",
+      "targets": [
+        ["css=summary", "css:finder"],
+        ["xpath=//summary", "xpath:position"],
+        ["xpath=//summary[contains(.,'Table Data')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "850ab431-176a-4549-adf6-116bf013fc9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsondata",
+      "targets": [
+        ["id=jsondata", "id"],
+        ["css=#jsondata", "css:finder"],
+        ["xpath=//textarea[@id='jsondata']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df3106bf-eb49-41ca-8c18-73cc40bc7115",
+      "comment": "",
+      "command": "type",
+      "target": "id=jsondata",
+      "targets": [
+        ["id=jsondata", "id"],
+        ["css=#jsondata", "css:finder"],
+        ["xpath=//textarea[@id='jsondata']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[{\"name\" : \"Bob\", \"age\" : 20, \"gender\": \"male\"}, {\"name\": \"George\", \"age\" : 42, \"gender\": \"male\"}, {\"name\":\\n\"Sara\", \"age\" : 42, \"gender\": \"female\"}, {\"name\": \"Conor\", \"age\" : 40, \"gender\": \"male\"}, {\"name\":\\n\"Jennifer\", \"age\" : 42, \"gender\": \"female\"}]"
+    }, {
+      "id": "830c8fdf-a3d1-45b7-b253-012df7cd9ab9",
+      "comment": "",
+      "command": "click",
+      "target": "id=refreshtable",
+      "targets": [
+        ["id=refreshtable", "id"],
+        ["css=#refreshtable", "css:finder"],
+        ["xpath=//button[@id='refreshtable']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Refresh Table')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "950c9595-4333-416a-a8f6-f00523e9f6d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=refreshtable",
+      "targets": [
+        ["id=refreshtable", "id"],
+        ["css=#refreshtable", "css:finder"],
+        ["xpath=//button[@id='refreshtable']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Refresh Table')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5e2b2183-4d85-4b43-bd32-2541a929f2f9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7675b457-1fcc-4005-857e-ff9ec9559ee4"]
+  }],
+  "urls": ["https://testpages.herokuapp.com/styled/tag/dynamic-table.html"],
+  "plugins": []
+}
